@@ -13,8 +13,9 @@ const Hero: React.FC = () => {
           {ENGINEER_ROLE}
         </p>
         <p className="mt-6 text-slate-500 max-w-2xl leading-relaxed">
-          Results-oriented graduate with a strong interest in energy and renewables. 
-          Aspiring Registered Electrical Engineer (REE) focused on quality, critical thinking, and innovation.
+          Graduating Electrical Engineering student at Pamantasan ng Lungsod ng Maynila with a focus on power systems, controls, and renewable energy. 
+          Interested in gaining hands-on experience, developing technical expertise, and contributing to sustainable energy solutions. 
+          Open to opportunities for learning, collaboration, and professional growth.
         </p>
       </div>
     </section>

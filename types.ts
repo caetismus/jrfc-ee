@@ -13,12 +13,6 @@ export interface Skill {
   details?: string; // Optional context like "Advanced" or "Working knowledge"
 }
 
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-  timestamp: Date;
-}
-
 export enum SectionId {
   HERO = 'home',
   ABOUT = 'about',

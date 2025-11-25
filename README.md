@@ -20,3 +20,6 @@ I am actively seeking opportunities in the [Your Target Industry] sector. Feel f
 
 * **LinkedIn:** [www.linkedin.com/in/jamescubito]
 * **Email:** [jamescubito@gmail.com]
+
+---
+Developed by James Cubito, with assistance from Gemini AI.

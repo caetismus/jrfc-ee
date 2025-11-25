@@ -4,7 +4,7 @@ import { ENGINEER_ROLE, ENGINEER_NAME } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id={SectionId.HERO} className="min-h-[60vh] flex flex-col justify-center bg-white pt-24 pb-12">
+    <section id={SectionId.HERO} className="min-h-[60vh] flex flex-col justify-center bg-white pt-32 pb-20">
       <div className="container mx-auto px-6 md:px-12 max-w-5xl">
         <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
           {ENGINEER_NAME}

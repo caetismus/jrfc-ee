@@ -1,6 +1,5 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { ENGINEER_NAME } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -36,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-xs text-slate-600">
-          &copy; {new Date().getFullYear()} {ENGINEER_NAME}. All rights reserved.
+          &copy; {new Date().getFullYear()} James Cubito. All rights reserved.
         </div>
       </div>
     </footer>

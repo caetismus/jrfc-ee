@@ -6,7 +6,7 @@
 ## 🌐 View the Live Website
 This repository holds the raw source code. To view the final, rendered portfolio, click the link below:
 
-**➡️ [Visit My Portfolio Here](https://[caetismus.github.io/jrfc-ee/)**
+**➡️ [Visit My Portfolio Here](https://caetismus.github.io/jrfc-ee/)**
 
 ---
 

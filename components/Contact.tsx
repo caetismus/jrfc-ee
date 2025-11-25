@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionId } from '../types';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 
 const Contact: React.FC = () => {
   // Format for Viber: 63 + number without leading 0
@@ -9,9 +9,9 @@ const Contact: React.FC = () => {
 
   return (
     <section id={SectionId.CONTACT} className="py-24 bg-slate-900 text-white">
-      <div className="container mx-auto px-6 text-center max-w-2xl">
+      <div className="container mx-auto px-6 text-center max-w-6xl">
         <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
-        <p className="text-slate-400 mb-12 leading-relaxed">
+        <p className="text-slate-400 mb-12 leading-relaxed max-w-2xl mx-auto">
             I am currently open to opportunities in Power Systems, Renewable Energy, and Electrical Design.
         </p>
         
@@ -25,6 +25,7 @@ const Contact: React.FC = () => {
                     jamescubito@gmail.com
                 </a>
             </div>
+
             <div className="flex flex-col items-center group">
                 <div className="mb-3 text-slate-500 group-hover:text-primary-400 transition-colors">
                   <Phone size={28} />
@@ -38,14 +39,20 @@ const Contact: React.FC = () => {
                     0945 994 2440
                 </a>
             </div>
+
             <div className="flex flex-col items-center group">
                 <div className="mb-3 text-slate-500 group-hover:text-primary-400 transition-colors">
-                  <MapPin size={28} />
+                  <Linkedin size={28} />
                 </div>
-                <h4 className="text-sm uppercase tracking-widest text-slate-500 mb-2">Location</h4>
-                <span className="text-lg font-medium">
-                    Quezon City, Metro Manila
-                </span>
+                <h4 className="text-sm uppercase tracking-widest text-slate-500 mb-2">LinkedIn</h4>
+                <a 
+                  href="https://linkedin.com/in/jamescubito"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium hover:text-primary-400 transition-colors"
+                >
+                    in/jamescubito
+                </a>
             </div>
         </div>
       </div>

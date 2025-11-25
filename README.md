@@ -18,5 +18,5 @@ This website serves as my digital resume and project showcase, detailing my acad
 ## 📬 Connect with Me
 I am actively seeking opportunities in the [Your Target Industry] sector. Feel free to connect!
 
-* **LinkedIn:** [linkedin.com/in/jamescubito]
+* **LinkedIn:** [www.linkedin.com/in/jamescubito]
 * **Email:** [jamescubito@gmail.com]

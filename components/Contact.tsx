@@ -8,32 +8,32 @@ const Contact: React.FC = () => {
   const viberNumber = "639459942440";
 
   return (
-    <section id={SectionId.CONTACT} className="py-24 bg-slate-900 text-white">
+    <section id={SectionId.CONTACT} className="py-12 bg-slate-900 text-white">
       <div className="container mx-auto px-6 text-center max-w-6xl">
-        <h3 className="text-3xl font-bold mb-8">Get In Touch</h3>
-        <p className="text-slate-400 mb-12 leading-relaxed max-w-2xl mx-auto">
+        <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
+        <p className="text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto text-sm">
             I am currently open to opportunities in Power Systems, Renewable Energy, and Electrical Design.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="flex flex-col items-center group">
-                <div className="mb-3 text-slate-500 group-hover:text-primary-400 transition-colors">
-                  <Mail size={28} />
+                <div className="mb-2 text-slate-500 group-hover:text-primary-400 transition-colors">
+                  <Mail size={24} />
                 </div>
-                <h4 className="text-sm uppercase tracking-widest text-slate-500 mb-2">Email</h4>
-                <a href="mailto:jamescubito@gmail.com" className="text-lg font-medium hover:text-primary-400 transition-colors">
+                <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-1">Email</h4>
+                <a href="mailto:jamescubito@gmail.com" className="text-base font-medium hover:text-primary-400 transition-colors">
                     jamescubito@gmail.com
                 </a>
             </div>
 
             <div className="flex flex-col items-center group">
-                <div className="mb-3 text-slate-500 group-hover:text-primary-400 transition-colors">
-                  <Phone size={28} />
+                <div className="mb-2 text-slate-500 group-hover:text-primary-400 transition-colors">
+                  <Phone size={24} />
                 </div>
-                <h4 className="text-sm uppercase tracking-widest text-slate-500 mb-2">Viber / Mobile</h4>
+                <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-1">Viber / Mobile</h4>
                 <a 
                   href={`viber://chat?number=%2B${viberNumber}`}
-                  className="text-lg font-medium hover:text-primary-400 transition-colors cursor-pointer"
+                  className="text-base font-medium hover:text-primary-400 transition-colors cursor-pointer"
                   title="Open in Viber"
                 >
                     0945 994 2440
@@ -41,15 +41,15 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-center group">
-                <div className="mb-3 text-slate-500 group-hover:text-primary-400 transition-colors">
-                  <Linkedin size={28} />
+                <div className="mb-2 text-slate-500 group-hover:text-primary-400 transition-colors">
+                  <Linkedin size={24} />
                 </div>
-                <h4 className="text-sm uppercase tracking-widest text-slate-500 mb-2">LinkedIn</h4>
+                <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-1">LinkedIn</h4>
                 <a 
                   href="https://linkedin.com/in/jamescubito"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg font-medium hover:text-primary-400 transition-colors"
+                  className="text-base font-medium hover:text-primary-400 transition-colors"
                 >
                     in/jamescubito
                 </a>

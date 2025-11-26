@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
     id: 'xl-fault-calc',
     title: "Excel-based Symmetrical Fault Calculator",
     category: "Power Systems",
-    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    description: "Developed a supplementary fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
     technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {

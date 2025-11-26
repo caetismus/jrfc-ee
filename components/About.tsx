@@ -29,9 +29,9 @@ const About: React.FC = () => {
           <div className="grid gap-8">
             {EDUCATION.map((edu, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6">
-                 {/* Education Logo */}
+                 {/* Education Logo - Circular (rounded-full) */}
                  {edu.logo && (
-                  <div className="w-16 h-16 shrink-0 rounded-md overflow-hidden bg-white border border-slate-100 flex items-center justify-center self-start">
+                  <div className="w-16 h-16 shrink-0 rounded-full overflow-hidden bg-white border border-slate-100 flex items-center justify-center self-start">
                     <img 
                       src={edu.logo} 
                       alt={`${edu.school} logo`}
@@ -77,8 +77,8 @@ const About: React.FC = () => {
               
               return (
                 <div key={index} className="relative pl-12">
-                  {/* Logo Container */}
-                  <div className={`absolute -left-6 top-0 w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm z-10 
+                  {/* Logo Container - Rounded Square (rounded-lg) */}
+                  <div className={`absolute -left-6 top-0 w-12 h-12 rounded-lg bg-white flex items-center justify-center overflow-hidden shadow-sm z-10 
                     ${isLatest ? 'border-2 border-primary-600 ring-4 ring-primary-50' : 'border border-slate-200'}`}>
                     <img 
                       src={exp.logo} 

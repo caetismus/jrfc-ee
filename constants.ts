@@ -181,7 +181,5 @@ export const SKILLS: Skill[] = [
   { name: "Python", category: "Programming", details: "Working Knowledge" },
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
-  { name: "Arduino", category: "Core" },
-  { name: "Electrical Installation", category: "Core", details: "NCII Certified" },
-  { name: "PV System Installation", category: "Core", details: "TESDA Online Certified" }
+  { name: "Arduino", category: "Others" },
 ];

@@ -41,7 +41,7 @@ export const EDUCATION: EducationItem[] = [
 export const EXPERIENCE: ExperienceItem[] = [
   {
     role: "Intern, Plant Performance and Asset Management",
-    company: "ACEN",
+    company: "ACEN Corporation",
     location: "Ayala Triangle, Makati",
     duration: "July – Oct 2025",
     type: "Internship",
@@ -58,14 +58,15 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     role: "Engineering Intern",
     company: "IRAH Solutions and Service, Inc.",
-    location: "Quezon City",
+    location: "South Triangle, Quezon City",
     duration: "July – Aug 2024",
     type: "Internship",
     logo: "assets/irah.png",
     description: [
       "Assisted in the designing and implementation of **auxiliary and FDAS systems** through **AutoCAD**.",
       "Installed **wiring and electrical/electronic systems** under the supervision of electricians.",
-      "Coordinated with main office on the transfer of incomplete equipment to the site."
+      "Coordinated with main office on the transfer of incomplete equipment to the site.",
+      "Assigned to distribution of allowances to fellow interns at the site"
     ]
   }
 ];

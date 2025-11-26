@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# James Cubito | Electrical Engineering Portfolio
 
-# Run and deploy your AI Studio app
+This repository hosts the source code for my personal portfolio website, showcasing my academic background, internship experience, projects, and technical skills as a Graduate Electrical Engineer.
 
-This contains everything you need to run your app locally.
+**Live Site:** [View Portfolio](https://caetismus.github.io/jrfc-ee/)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1JJ9Fc8Z9_H4gNDt8YZuuCHSPi-TUqU5m
+## Technology Stack
+*   **Framework:** React (TypeScript)
+*   **Styling:** Tailwind CSS
+*   **Build Tool:** Vite
+*   **Deployment:** GitHub Pages (via GitHub Actions)
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## How to Update Content
+To update the portfolio information (text, projects, contact info), simply edit the **`constants.ts`** file. The site will automatically rebuild and deploy upon committing changes to the main branch.

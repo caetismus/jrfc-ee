@@ -181,5 +181,11 @@ export const SKILLS: Skill[] = [
   { name: "Python", category: "Programming", details: "Working Knowledge" },
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
-  { name: "Arduino", category: "Others" },
+  { name: "Electrical Circuits", category: "Core" },
+  { name: "Electrical Machines", category: "Core" },
+  { name: "Power Systems", category: "Core" },
+  { name: "Power Plant Design", category: "Core" },
+  { name: "Electrical Design and Illumination", category: "Core" },
+  { name: "Arduino", category: "Core" },
+
 ];

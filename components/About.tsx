@@ -1,8 +1,22 @@
+
 import React from 'react';
 import { SectionId } from '../types';
+import { EDUCATION, EXPERIENCE, CERTIFICATIONS } from '../constants';
 import { GraduationCap, Briefcase, Award } from 'lucide-react';
 
 const About: React.FC = () => {
+  
+  // Helper function to render text with bold markers (**text**)
+  const renderDescription = (text: string) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={index} className="text-slate-900 font-semibold">{part.slice(2, -2)}</strong>;
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
   return (
     <section id={SectionId.ABOUT} className="py-20 bg-slate-50 border-t border-slate-200">
       <div className="container mx-auto px-6 md:px-12 max-w-5xl">
@@ -13,33 +27,41 @@ const About: React.FC = () => {
             <GraduationCap className="w-6 h-6 mr-3 text-primary-600" /> Education
           </h3>
           <div className="grid gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-              <div className="flex flex-col md:flex-row justify-between md:items-start mb-2">
-                <div>
-                  <h4 className="text-lg font-bold text-slate-900">Pamantasan ng Lungsod ng Maynila</h4>
-                  <p className="text-primary-600 font-medium">Bachelor of Science in Electrical Engineering</p>
+            {EDUCATION.map((edu, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row gap-6">
+                 {/* Education Logo */}
+                 {edu.logo && (
+                  <div className="w-16 h-16 shrink-0 rounded-md overflow-hidden bg-white border border-slate-100 flex items-center justify-center self-start">
+                    <img 
+                      src={edu.logo} 
+                      alt={`${edu.school} logo`}
+                      className="w-full h-full object-contain p-1"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement?.classList.add('hidden');
+                      }}
+                    />
+                  </div>
+                )}
+                
+                <div className="flex-grow">
+                  <div className="flex flex-col md:flex-row justify-between md:items-start mb-2">
+                    <div>
+                      <h4 className="text-lg font-bold text-slate-900 leading-tight">{edu.school}</h4>
+                      <p className="text-primary-600 font-medium mt-1">{edu.degree}</p>
+                    </div>
+                    <span className="text-slate-500 text-sm mt-1 md:mt-0 whitespace-nowrap">{edu.location} • {edu.year}</span>
+                  </div>
+                  {edu.highlights.length > 0 && (
+                    <ul className="list-disc list-inside text-slate-600 text-sm mt-3 space-y-1">
+                      {edu.highlights.map((highlight, idx) => (
+                        <li key={idx}>{highlight}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-                <span className="text-slate-500 text-sm mt-1 md:mt-0">Intramuros, Manila • 2020 - 2026</span>
               </div>
-              <ul className="list-disc list-inside text-slate-600 text-sm mt-3 space-y-1">
-                <li>Member: PLM DOST Scholars Association</li>
-                <li>Member: PLM Junior Institute of Electrical Engineers</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-              <div className="flex flex-col md:flex-row justify-between md:items-start mb-2">
-                <div>
-                  <h4 className="text-lg font-bold text-slate-900">De La Salle University Manila</h4>
-                  <p className="text-primary-600 font-medium">Senior High School (STEM)</p>
-                </div>
-                <span className="text-slate-500 text-sm mt-1 md:mt-0">Malate, Manila • 2018 - 2020</span>
-              </div>
-              <ul className="list-disc list-inside text-slate-600 text-sm mt-3 space-y-1">
-                <li>Member: DLSU SHS Robotics and Engineering Club</li>
-                <li>Member: DLSU SHS Student Ambassadors</li>
-              </ul>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -48,64 +70,80 @@ const About: React.FC = () => {
           <h3 className="text-2xl font-bold text-slate-900 mb-8 flex items-center">
             <Briefcase className="w-6 h-6 mr-3 text-primary-600" /> Internship Experience
           </h3>
-          <div className="relative border-l-2 border-slate-200 ml-3 space-y-12">
-            
-            <div className="relative pl-8">
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary-600 border-4 border-white shadow-sm"></div>
-              <div className="flex flex-col sm:flex-row justify-between items-start mb-2">
-                <h4 className="text-lg font-bold text-slate-900">Intern, Plant Performance and Asset Management</h4>
-                <span className="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">July – Oct 2025</span>
-              </div>
-              <div className="text-primary-600 font-medium mb-2">ACEN (Ayala Triangle, Makati)</div>
-              <ul className="list-disc list-outside ml-4 text-slate-600 text-sm space-y-2 leading-relaxed">
-                <li>Assisted the Plant Operations Performance Team in consolidating operational data from multiple plant sites.</li>
-                <li>Prepared and presented performance reports for management using Tableau and Excel Power Query.</li>
-                <li>Utilized Snowflake SQL for data extraction and analysis to support reporting accuracy.</li>
-                <li>Applied advanced MS Excel skills for data validation, trend analysis, and report automation.</li>
-                <li>Coordinated with several solar and wind plants regarding RCA reports of issues for team analysis.</li>
-                <li>Successfully facilitated the transition of Daily Asset Performance Report to the data management team.</li>
-              </ul>
-            </div>
-
-            <div className="relative pl-8">
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
-              <div className="flex flex-col sm:flex-row justify-between items-start mb-2">
-                <h4 className="text-lg font-bold text-slate-900">Engineering Intern</h4>
-                <span className="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">July – Aug 2024</span>
-              </div>
-              <div className="text-primary-600 font-medium mb-2">IRAH Solutions and Service, Inc. (Quezon City)</div>
-              <ul className="list-disc list-outside ml-4 text-slate-600 text-sm space-y-2 leading-relaxed">
-                <li>Assisted in the designing and implementation of auxiliary and FDAS systems through AutoCAD.</li>
-                <li>Installed wiring and electrical/electronic systems under the supervision of electricians.</li>
-                <li>Coordinated with main office on the transfer of incomplete equipment to the site.</li>
-              </ul>
-            </div>
-
+          <div className="relative border-l-2 border-slate-200 ml-6 space-y-12">
+            {EXPERIENCE.map((exp, index) => {
+              // Highlight the latest experience (index 0)
+              const isLatest = index === 0;
+              
+              return (
+                <div key={index} className="relative pl-12">
+                  {/* Logo Container */}
+                  <div className={`absolute -left-6 top-0 w-12 h-12 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm z-10 
+                    ${isLatest ? 'border-2 border-primary-600 ring-4 ring-primary-50' : 'border border-slate-200'}`}>
+                    <img 
+                      src={exp.logo} 
+                      alt={`${exp.company} logo`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // Fallback if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement?.classList.add('bg-slate-100');
+                        e.currentTarget.parentElement?.classList.remove('bg-white');
+                      }}
+                    />
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2">
+                    <h4 className={`text-lg font-bold ${isLatest ? 'text-primary-700' : 'text-slate-900'}`}>
+                      {exp.role}
+                    </h4>
+                    <span className={`text-xs font-semibold px-2 py-1 rounded ${isLatest ? 'bg-primary-100 text-primary-700' : 'bg-slate-100 text-slate-600'}`}>
+                      {exp.duration}
+                    </span>
+                  </div>
+                  
+                  <div className="text-slate-700 font-medium mb-3">{exp.company} <span className="text-slate-400">•</span> <span className="text-slate-500 text-sm">{exp.location}</span></div>
+                  
+                  <ul className="list-disc list-outside ml-4 text-slate-600 text-sm space-y-2 leading-relaxed">
+                    {exp.description.map((item, idx) => (
+                      <li key={idx}>
+                        {renderDescription(item)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Certs */}
+        {/* Certifications */}
         <div>
           <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
             <Award className="w-6 h-6 mr-3 text-primary-600" /> Certifications & Awards
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-             <div className="border border-slate-200 p-4 rounded bg-white">
-                <div className="font-semibold text-slate-800">Lean Six Sigma Yellow Belt</div>
-                <div className="text-sm text-slate-500">MF Treinamentos, 2025</div>
-             </div>
-             <div className="border border-slate-200 p-4 rounded bg-white">
-                <div className="font-semibold text-slate-800">Electrical Installation & Maintenance NCII</div>
-                <div className="text-sm text-slate-500">TESDA, 2025</div>
-             </div>
-             <div className="border border-slate-200 p-4 rounded bg-white">
-                <div className="font-semibold text-slate-800">Photovoltaic System Installation NCII</div>
-                <div className="text-sm text-slate-500">eTESDA, 2025</div>
-             </div>
-             <div className="border border-slate-200 p-4 rounded bg-white">
-                <div className="font-semibold text-slate-800">Merit Scholar</div>
-                <div className="text-sm text-slate-500">DOST-Science Education Institute, 2020</div>
-             </div>
+             {CERTIFICATIONS.map((cert, index) => (
+               <div key={index} className="border border-slate-200 p-4 rounded bg-white hover:border-primary-300 transition-colors flex items-center gap-4">
+                  {cert.logo && (
+                    <div className="w-12 h-12 shrink-0 rounded-md overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
+                      <img 
+                        src={cert.logo} 
+                        alt={`${cert.issuer} logo`}
+                        className="w-full h-full object-contain p-1"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.parentElement?.classList.add('hidden');
+                        }}
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <div className="font-semibold text-slate-800 leading-tight">{cert.title}</div>
+                    <div className="text-sm text-slate-500 mt-1">{cert.issuer}, {cert.year}</div>
+                  </div>
+               </div>
+             ))}
           </div>
         </div>
 

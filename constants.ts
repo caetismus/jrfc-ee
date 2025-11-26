@@ -1,8 +1,109 @@
-import { Project, Skill } from './types';
+
+import { Project, Skill, EducationItem, ExperienceItem, CertificationItem } from './types';
 
 export const ENGINEER_NAME = "James Cubito";
 export const ENGINEER_ROLE = "Graduate Electrical Engineer";
 
+// =============================================================================
+//  EDUCATION HISTORY
+//  IMPORTANT: Place logo images in the 'public/assets' folder.
+// =============================================================================
+export const EDUCATION: EducationItem[] = [
+  {
+    school: "Pamantasan ng Lungsod ng Maynila",
+    degree: "Bachelor of Science in Electrical Engineering",
+    location: "Intramuros, Manila",
+    year: "2020 - 2026",
+    logo: "assets/plm.png",
+    highlights: [
+      "Member: PLM DOST Scholars Association",
+      "Member: PLM Junior Institute of Electrical Engineers"
+    ]
+  },
+  {
+    school: "De La Salle University Manila",
+    degree: "Senior High School (STEM)",
+    location: "Malate, Manila",
+    year: "2018 - 2020",
+    logo: "assets/dlsu.png",
+    highlights: [
+      "Member: DLSU SHS Robotics and Engineering Club",
+      "Member: DLSU SHS Student Ambassadors"
+    ]
+  }
+];
+
+// =============================================================================
+//  EXPERIENCE / INTERNSHIPS
+//  Tip: Wrap text in **double asterisks** to make it bold (e.g., **AutoCAD**)
+//  IMPORTANT: Place logo images in the 'public/assets' folder.
+// =============================================================================
+export const EXPERIENCE: ExperienceItem[] = [
+  {
+    role: "Intern, Plant Performance and Asset Management",
+    company: "ACEN",
+    location: "Ayala Triangle, Makati",
+    duration: "July – Oct 2025",
+    type: "Internship",
+    logo: "assets/acen.png",
+    description: [
+      "Assisted the **Plant Operations Performance Team** in consolidating operational data from multiple plant sites.",
+      "Prepared and presented performance reports for management using **Tableau** and **Excel Power Query**.",
+      "Utilized **Snowflake SQL** for data extraction and analysis to support reporting accuracy.",
+      "Applied **advanced MS Excel skills** for data validation, trend analysis, and report automation.",
+      "Coordinated with several solar and wind plants regarding **RCA reports** of issues for team analysis.",
+      "Successfully facilitated the transition of **Daily Asset Performance Report** to the data management team."
+    ]
+  },
+  {
+    role: "Engineering Intern",
+    company: "IRAH Solutions and Service, Inc.",
+    location: "Quezon City",
+    duration: "July – Aug 2024",
+    type: "Internship",
+    logo: "assets/irah.png",
+    description: [
+      "Assisted in the designing and implementation of **auxiliary and FDAS systems** through **AutoCAD**.",
+      "Installed **wiring and electrical/electronic systems** under the supervision of electricians.",
+      "Coordinated with main office on the transfer of incomplete equipment to the site."
+    ]
+  }
+];
+
+// =============================================================================
+//  CERTIFICATIONS & AWARDS
+//  IMPORTANT: Place logo images in the 'public/assets' folder.
+// =============================================================================
+export const CERTIFICATIONS: CertificationItem[] = [
+  {
+    title: "Lean Six Sigma Yellow Belt",
+    issuer: "MF Treinamentos",
+    year: "2025",
+    logo: "assets/mf_treinamentos.png"
+  },
+  {
+    title: "Electrical Installation & Maintenance NCII",
+    issuer: "TESDA",
+    year: "2025",
+    logo: "assets/tesda.png"
+  },
+  {
+    title: "Photovoltaic System Installation NCII",
+    issuer: "eTESDA",
+    year: "2025",
+    logo: "assets/etesda.png"
+  },
+  {
+    title: "Merit Scholar",
+    issuer: "DOST-Science Education Institute",
+    year: "2020",
+    logo: "assets/dost.png"
+  }
+];
+
+// =============================================================================
+//  PROJECTS
+// =============================================================================
 export const PROJECTS: Project[] = [
   {
     id: 'thesis',
@@ -64,6 +165,9 @@ export const PROJECTS: Project[] = [
   }
 ];
 
+// =============================================================================
+//  SKILLS
+// =============================================================================
 export const SKILLS: Skill[] = [
   { name: "Microsoft Office Suite", category: "Software", details: "Excel, Word, Powerpoint, Teams" },
   { name: "Google Workspace", category: "Software", details: "Drive, Docs, Sheets, Slides" },

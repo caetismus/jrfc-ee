@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center relative">
         
         {/* Empty div to balance flex layout so nav remains centered */}
-        <div className="hidden md:block w-[100px]"></div>
+        <div className="hidden md:block w-[120px]"></div>
 
         {/* Desktop Nav - Centered */}
         <div className="hidden md:flex space-x-12">
@@ -53,29 +53,29 @@ const Header: React.FC = () => {
           ))}
         </div>
 
-        {/* Desktop Download Button (Right Side) */}
-        <div className="hidden md:flex justify-end w-[100px]">
+        {/* Desktop Resume Button (Right Side) */}
+        <div className="hidden md:flex justify-end w-[120px]">
           <a 
             href="assets/resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 bg-slate-900 hover:bg-primary-600 text-white text-[11px] font-medium py-1.5 px-3 rounded-full transition-all shadow-sm hover:shadow-md"
+            className="flex items-center gap-2 bg-slate-900 hover:bg-primary-600 text-white text-sm font-medium py-2 px-5 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
           >
-            <Download size={13} />
+            <Download size={16} />
             Resume
           </a>
         </div>
 
         {/* Mobile Layout */}
         <div className="md:hidden w-full flex justify-between items-center relative">
-             {/* Mobile Download Button */}
+             {/* Mobile Resume Button */}
              <a 
                 href="assets/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 bg-slate-900 text-white text-[11px] font-medium py-1.5 px-3 rounded-full shadow-sm"
+                className="flex items-center gap-1.5 bg-slate-900 text-white text-xs font-medium py-2 px-4 rounded-full shadow-sm"
               >
-                <Download size={13} />
+                <Download size={14} />
                 Resume
               </a>
 

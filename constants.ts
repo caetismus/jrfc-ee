@@ -119,6 +119,13 @@ export const ACADEMIC_PROJECTS: Project[] = [
     technologies: ["Python", "Data Management", "Efficiency Optimization"]
   },
   {
+    id: 'xl-fault-calc',
+    title: "Excel-based Symmetrical Fault Calculator",
+    category: "Power Systems",
+    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
+  },
+  {
     id: 'relay-table-game',
     title: "Relay-based 4-Player Button Table for Gameshow",
     category: "Power Electronics",
@@ -161,11 +168,7 @@ export const ACADEMIC_PROJECTS: Project[] = [
 // =============================================================================
 export const PERSONAL_PROJECTS: Project[] = [
   {
-    id: 'xl-fault-calc',
-    title: "Excel-based Symmetrical Fault Calculator",
-    category: "Power Systems",
-    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
-    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
+    
   }
 ];
 
@@ -185,7 +188,8 @@ export const SKILLS: Skill[] = [
   { name: "Python", category: "Programming", details: "Working Knowledge" },
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
+  { name: "Electrical Circuits", category: "Core" },
+  { name: "Electrical Machines", category: "Core" },
+  { name: "Electrical Design and Illumination", category: "Core" },
   { name: "Arduino", category: "Core" },
-  { name: "Electrical Installation", category: "Core", details: "NCII Certified" },
-  { name: "PV System Installation", category: "Core", details: "TESDA Online Certified" }
 ];

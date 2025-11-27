@@ -168,7 +168,11 @@ export const ACADEMIC_PROJECTS: Project[] = [
 // =============================================================================
 export const PERSONAL_PROJECTS: Project[] = [
   {
-    
+    id: 'faultcalcpy',
+    title: "Python-based Electrical Fault Calculator",
+    category: "Power Systems",
+    description: "(Currently under development) Fault-type selectable and parameter configurable electrical fault calculator made using python and external libraries. Created to better understand and cross-check fault calculations.",
+    technologies: ["Python", "Power System Fault Analysis", "Z-bus Method"]
   }
 ];
 

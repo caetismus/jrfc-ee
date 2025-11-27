@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { SectionId } from '../types';
 import { EDUCATION, EXPERIENCE, CERTIFICATIONS } from '../constants';
-import { GraduationCap, Briefcase, Award } from 'lucide-react';
+import { GraduationCap, Briefcase, Award, ExternalLink } from 'lucide-react';
 
 const About: React.FC = () => {
   
@@ -124,27 +123,49 @@ const About: React.FC = () => {
             <Award className="w-6 h-6 mr-3 text-primary-600" /> Certifications & Awards
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-             {CERTIFICATIONS.map((cert, index) => (
-               <div key={index} className="border border-slate-200 p-3 rounded bg-white hover:border-primary-300 transition-colors flex items-center gap-4">
-                  {cert.logo && (
-                    <div className="w-10 h-10 shrink-0 rounded-md overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                      <img 
-                        src={cert.logo} 
-                        alt={`${cert.issuer} logo`}
-                        className="w-full h-full object-contain p-1"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                          e.currentTarget.parentElement?.classList.add('hidden');
-                        }}
-                      />
-                    </div>
-                  )}
-                  <div>
-                    <div className="font-semibold text-slate-800 leading-tight text-sm">{cert.title}</div>
-                    <div className="text-xs text-slate-500 mt-0.5">{cert.issuer}, {cert.year}</div>
-                  </div>
-               </div>
-             ))}
+             {CERTIFICATIONS.map((cert, index) => {
+               const Wrapper = cert.link ? 'a' : 'div';
+               const wrapperProps = cert.link ? {
+                 href: cert.link,
+                 target: "_blank",
+                 rel: "noopener noreferrer",
+                 className: "block h-full cursor-pointer group"
+               } : {
+                 className: "block h-full"
+               };
+
+               return (
+                 <Wrapper key={index} {...wrapperProps}>
+                   <div className={`border border-slate-200 p-3 rounded bg-white transition-all flex items-center gap-4 h-full
+                     ${cert.link ? 'group-hover:border-primary-300 group-hover:shadow-sm' : ''}`}>
+                      {cert.logo && (
+                        <div className="w-10 h-10 shrink-0 rounded-md overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
+                          <img 
+                            src={cert.logo} 
+                            alt={`${cert.issuer} logo`}
+                            className="w-full h-full object-contain p-1"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                              e.currentTarget.parentElement?.classList.add('hidden');
+                            }}
+                          />
+                        </div>
+                      )}
+                      <div className="flex-grow">
+                        <div className="flex justify-between items-start">
+                          <div className={`font-semibold leading-tight text-sm ${cert.link ? 'group-hover:text-primary-600 transition-colors' : 'text-slate-800'}`}>
+                            {cert.title}
+                          </div>
+                          {cert.link && (
+                            <ExternalLink size={14} className="text-slate-300 group-hover:text-primary-400 shrink-0 ml-2" />
+                          )}
+                        </div>
+                        <div className="text-xs text-slate-500 mt-0.5">{cert.issuer}, {cert.year}</div>
+                      </div>
+                   </div>
+                 </Wrapper>
+               );
+             })}
           </div>
         </div>
 

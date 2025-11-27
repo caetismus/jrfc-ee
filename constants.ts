@@ -46,12 +46,12 @@ export const EXPERIENCE: ExperienceItem[] = [
     type: "Internship",
     logo: "assets/acen.png",
     description: [
-      "Assisted the Plant Performance Team in consolidating operational data from multiple plant sites.",
-      "Streamlined the plant downtime data collection and analysis using advanced MS Excel automation methods, reducing manual overhead and reducing entry errors.",
-      "Prepared and presented daily performance reports for management using Tableau and Excel Power Query.",
-      "Utilized Snowflake SQL for data extraction and analysis to support reporting accuracy.",
-      "Coordinated with several solar and wind plants on submission of RCA reports on issues for team analysis.",
-      "Spearheaded the successful handover of the Daily Asset Performance Report framework to the Data Management team, completing the full transition within a 1-month timeline."
+      "Assisted the *Plant Performance Team* in consolidating operational data from multiple plant sites.",
+      "Streamlined the plant downtime data collection and analysis using *advanced MS Excel* automation methods, reducing manual overhead and reducing entry errors.",
+      "Prepared and presented daily performance reports for management using *Tableau* and *Excel Power Query*.",
+      "Utilized *Snowflake SQL* for data extraction and analysis to support reporting accuracy.",
+      "Coordinated with several solar and wind plants on submission of *RCA reports* on issues for team analysis.",
+      "Spearheaded the successful handover of the *Daily Asset Performance Report* framework to the Data Management team, completing the full transition within a 1-month timeline."
     ]
   },
   {
@@ -78,25 +78,29 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Lean Six Sigma Yellow Belt",
     issuer: "MF Treinamentos",
     year: "2025",
-    logo: "assets/mf_treinamentos.png"
+    logo: "assets/mf_treinamentos.png",
+    link: "certifications/lean_six_sigma.pdf"
   },
   {
     title: "Electrical Installation & Maintenance NCII",
     issuer: "TESDA",
     year: "2025",
-    logo: "assets/tesda.png"
+    logo: "assets/tesda.jpg",
+    link: "certifications/eim_ncii.pdf"
   },
   {
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/tesda.png"
+    logo: "assets/tesda.jpg",
+    link: "certifications/pv_system_ncii.pdf"
   },
   {
     title: "Merit Scholar",
     issuer: "DOST-Science Education Institute",
     year: "2020",
-    logo: "assets/dost.png"
+    logo: "assets/dost.png",
+  //  link: "certifications/dost_scholar.pdf"
   }
 ];
 
@@ -110,14 +114,14 @@ export const ACADEMIC_PROJECTS: Project[] = [
     subtitle: "Anaerobic Digestion of Chlorophyta Biomass Co-digested with Livestock Manure: Harnessing Biogas for Methane-Derived Electrochemical Energy Conversion in Cabuyao, Laguna",
     category: "Research",
     description: "Small-scale exploratory study project on a modified biomass feedstock based on algae and cattle waste mixture for methane gas production as alternative fuel source for biogas generators.",
-    technologies: ["Biomass Feedstock", "Renewable Energy", "Research Methodology"]
+    technologies: ["Biogas", "Biomass Feedstock", "Renewable Energy", "Research Methodology"]
   },
   {
     id: 'salestrackr',
     title: "AquaSales: Python-Based Sales Tracking System",
     category: "Software",
     description: "Developed a digital tracking system to tabulate daily sales and stock of a water refilling station, increasing daily productivity and efficiency.",
-    technologies: ["Python", "Data Management", "Efficiency Optimization"]
+    technologies: ["Python", "Data Management", "Business Application"]
   },
   {
     id: 'xl-fault-calc',

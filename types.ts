@@ -39,6 +39,7 @@ export interface CertificationItem {
   issuer: string;
   year: string;
   logo?: string; // Path to image file in public/assets
+  link?: string; // URL to external site or path to file in public/certifications
 }
 
 export interface ContactInfo {

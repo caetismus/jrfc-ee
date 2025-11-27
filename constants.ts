@@ -85,14 +85,14 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Electrical Installation & Maintenance NCII",
     issuer: "TESDA",
     year: "2025",
-    logo: "assets/tesda.jpg",
+    logo: "assets/tesda.png",
     link: "https://www.tesda.gov.ph/Rwac/Rwac2017"
   },
   {
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/tesda.jpg",
+    logo: "assets/tesda.png",
     link: "https://drive.google.com/drive/folders/17bun6aQXyKUEdBzQPfa1MNRRDbFNbrkr?usp=sharing"
   },
   {
@@ -131,20 +131,6 @@ export const ACADEMIC_PROJECTS: Project[] = [
     technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {
-    id: 'relay-table-game',
-    title: "Relay-based 4-Player Button Table for Gameshow",
-    category: "Power Electronics",
-    description: "Developed an extendable four-player gameshow system using relays connected to switches, LEDs, and buttons. The first player to press their button lights up their corresponding LED, disabling the remaining LEDs.",
-    technologies: ["Relay Logic", "Circuit Design", "Hardware Prototyping"]
-  },
-  {
-    id: 'transformer',
-    title: "230/120V 100VA Transformer",
-    category: "AC Machines",
-    description: "Constructed a DIY wire-wound shell-type transformer using separate components and materials with specified VA rating; calculated necessary winding ratio for voltage output.",
-    technologies: ["Transformer Design", "Winding Calculations", "Fabrication"]
-  },
-  {
     id: 'dc-supply',
     title: "DC Power Supply",
     category: "Power Electronics",
@@ -163,7 +149,7 @@ export const ACADEMIC_PROJECTS: Project[] = [
     title: "Research Capstone: Statistical Correlational Study",
     subtitle: "Statistical Analysis of Psychological Health and GWA of DLSU 118 STEM Students",
     category: "Research",
-    description: "Conducted and analyzed a statistical correlational study of GWA and mental health of university senior high school STEM students in DLSU Manila.",
+    description: "Conducted and analyzed a statistical correlational study of GWA and mental health of university senior high school STEM students in DLSU Manila; presented at DLSU SHS 1st Research Congress.",
     technologies: ["Statistical Analysis", "Data Correlation", "Academic Research"]
   }
 ];

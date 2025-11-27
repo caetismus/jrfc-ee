@@ -4,9 +4,9 @@ import { PROJECTS } from '../constants';
 
 const Projects: React.FC = () => {
   return (
-    <section id={SectionId.PROJECTS} className="py-20 bg-white">
+    <section id={SectionId.PROJECTS} className="py-12 bg-white">
       <div className="container mx-auto px-6 md:px-12 max-w-5xl">
-        <h3 className="text-3xl font-bold text-slate-900 mb-12">Academic Projects</h3>
+        <h3 className="text-3xl font-bold text-slate-900 mb-8">Academic Projects</h3>
         
         <div className="grid grid-cols-1 gap-8">
           {PROJECTS.map((project) => (
@@ -21,12 +21,12 @@ const Projects: React.FC = () => {
               </div>
               
               {project.subtitle && (
-                <div className="text-md font-serif italic text-slate-700 mb-3">
+                <div className="text-md font-serif italic text-slate-700 mb-2">
                   {project.subtitle}
                 </div>
               )}
 
-              <p className="text-slate-600 mb-4 leading-relaxed max-w-4xl">
+              <p className="text-slate-600 mb-3 leading-relaxed max-w-4xl">
                 {project.description}
               </p>
               

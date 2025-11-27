@@ -19,17 +19,6 @@ export const EDUCATION: EducationItem[] = [
       "Member: PLM DOST Scholars Association",
       "Member: PLM Junior Institute of Electrical Engineers"
     ]
-  },
-  {
-    school: "De La Salle University Manila",
-    degree: "Senior High School (STEM)",
-    location: "Malate, Manila",
-    year: "2018 - 2020",
-    logo: "assets/dlsu.png",
-    highlights: [
-      "Member: DLSU SHS Robotics and Engineering Club",
-      "Member: DLSU SHS Student Ambassadors"
-    ]
   }
 ];
 
@@ -91,7 +80,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/tesda.png"
+    logo: "assets/etesda.png"
   },
   {
     title: "Merit Scholar",
@@ -124,7 +113,7 @@ export const PROJECTS: Project[] = [
     id: 'xl-fault-calc',
     title: "Excel-based Symmetrical Fault Calculator",
     category: "Power Systems",
-    description: "Developed a supplementary fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
     technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {
@@ -181,11 +170,7 @@ export const SKILLS: Skill[] = [
   { name: "Python", category: "Programming", details: "Working Knowledge" },
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
-  { name: "Electrical Circuits", category: "Core" },
-  { name: "Electrical Machines", category: "Core" },
-  { name: "Power Systems", category: "Core" },
-  { name: "Power Plant Design", category: "Core" },
-  { name: "Electrical Design and Illumination", category: "Core" },
   { name: "Arduino", category: "Core" },
-
+  { name: "Electrical Installation", category: "Core", details: "NCII Certified" },
+  { name: "PV System Installation", category: "Core", details: "TESDA Online Certified" }
 ];

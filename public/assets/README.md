@@ -6,7 +6,8 @@ This folder is where you should upload your logo images and documents.
 Based on the current configuration in `constants.ts`, please add the following files here:
 
 **CV/Resume:**
-- `cv.pdf` (This is linked to the "Download CV" button in the header)
+- `cv.pdf`
+- `resume.pdf`
 
 **Education:**
 - `plm.png`
@@ -20,5 +21,8 @@ Based on the current configuration in `constants.ts`, please add the following f
 - `tesda.png`
 - `etesda.png`
 - `dost.png`
+
+**Contact:**
+- `viber_qr.png` (Screenshot of your Viber QR code)
 
 Once these files are added, the website will automatically display them.

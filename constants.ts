@@ -83,13 +83,13 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Electrical Installation & Maintenance NCII",
     issuer: "TESDA",
     year: "2025",
-    logo: "assets/tesda.png"
+    logo: "assets/tesda.jpg"
   },
   {
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/tesda.png"
+    logo: "assets/tesda.jpg"
   },
   {
     title: "Merit Scholar",
@@ -117,13 +117,6 @@ export const ACADEMIC_PROJECTS: Project[] = [
     category: "Software",
     description: "Developed a digital tracking system to tabulate daily sales and stock of a water refilling station, increasing daily productivity and efficiency.",
     technologies: ["Python", "Data Management", "Efficiency Optimization"]
-  },
-  {
-    id: 'xl-fault-calc',
-    title: "Excel-based Symmetrical Fault Calculator",
-    category: "Power Systems",
-    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
-    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {
     id: 'relay-table-game',
@@ -168,11 +161,11 @@ export const ACADEMIC_PROJECTS: Project[] = [
 // =============================================================================
 export const PERSONAL_PROJECTS: Project[] = [
   {
-    id: 'faultcalcpy',
-    title: "Python-based Electrical Fault Calculator",
+    id: 'xl-fault-calc',
+    title: "Excel-based Symmetrical Fault Calculator",
     category: "Power Systems",
-    description: "(Currently under development) Fault-type selectable and parameter configurable electrical fault calculator made using python and external libraries. Created to better understand and cross-check fault calculations.",
-    technologies: ["Python", "Power System Fault Analysis", "Z-bus Method"]
+    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   }
 ];
 
@@ -192,8 +185,7 @@ export const SKILLS: Skill[] = [
   { name: "Python", category: "Programming", details: "Working Knowledge" },
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
-  { name: "Electrical Circuits", category: "Core" },
-  { name: "Electrical Machines", category: "Core" },
-  { name: "Electrical Design and Illumination", category: "Core" },
   { name: "Arduino", category: "Core" },
+  { name: "Electrical Installation", category: "Core", details: "NCII Certified" },
+  { name: "PV System Installation", category: "Core", details: "TESDA Online Certified" }
 ];

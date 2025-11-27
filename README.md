@@ -1,14 +1,25 @@
-# James Cubito | Electrical Engineering Portfolio
+# 🔧 James' EE Page Source Code
 
-This repository hosts the source code for my personal portfolio website, showcasing my academic background, internship experience, projects, and technical skills as a Graduate Electrical Engineer.
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Type](https://img.shields.io/badge/Type-Portfolio%20Website-blue)
 
-**Live Site:** [View Portfolio](https://caetismus.github.io/jrfc-ee/)
+## 🌐 View the Live Website
+This repository holds the raw source code. To view the final, rendered portfolio, click the link below:
 
-## Technology Stack
-*   **Framework:** React (TypeScript)
-*   **Styling:** Tailwind CSS
-*   **Build Tool:** Vite
-*   **Deployment:** GitHub Pages (via GitHub Actions)
+**➡️ [Visit My Portfolio Here](https://caetismus.github.io/jrfc-ee/)**
 
-## How to Update Content
-To update the portfolio information (text, projects, contact info), simply edit the **`constants.ts`** file. The site will automatically rebuild and deploy upon committing changes to the main branch.
+---
+
+## 💡 Overview
+This website serves as my digital resume and project showcase, detailing my academic achievements, core technical skills, and engineering projects in Electrical Engineering.
+
+---
+
+## 📬 Connect with Me
+I am actively seeking opportunities in the [Your Target Industry] sector. Feel free to connect!
+
+* **LinkedIn:** [www.linkedin.com/in/jamescubito]
+* **Email:** [jamescubito@gmail.com]
+
+---
+Developed by James Cubito, with assistance from Google AI Studio.

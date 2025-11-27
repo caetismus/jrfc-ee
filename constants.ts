@@ -26,7 +26,8 @@ export const EDUCATION: EducationItem[] = [
     logo: "assets/plm.png",
     highlights: [
       "Member: PLM DOST Scholars Association",
-      "Member: PLM Junior Institute of Electrical Engineers"
+      "Member: PLM Junior Institute of Electrical Engineers",
+      "Scholar: DOST-SEI Merit 2020"
     ]
   }
 ];
@@ -40,17 +41,17 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     role: "Intern, Plant Performance and Asset Management",
     company: "ACEN",
-    location: "Ayala Triangle, Makati",
+    location: "Makati",
     duration: "July – Oct 2025",
     type: "Internship",
     logo: "assets/acen.png",
     description: [
-      "Assisted the **Plant Operations Performance Team** in consolidating operational data from multiple plant sites.",
-      "Prepared and presented performance reports for management using **Tableau** and **Excel Power Query**.",
-      "Utilized **Snowflake SQL** for data extraction and analysis to support reporting accuracy.",
-      "Applied **advanced MS Excel skills** for data validation, trend analysis, and report automation.",
-      "Coordinated with several solar and wind plants regarding **RCA reports** of issues for team analysis.",
-      "Successfully facilitated the transition of **Daily Asset Performance Report** to the data management team."
+      "Assisted the Plant Performance Team in consolidating operational data from multiple plant sites.",
+      "Streamlined the plant downtime data collection and analysis using advanced MS Excel automation methods, reducing manual overhead and reducing entry errors.",
+      "Prepared and presented daily performance reports for management using Tableau and Excel Power Query.",
+      "Utilized Snowflake SQL for data extraction and analysis to support reporting accuracy.",
+      "Coordinated with several solar and wind plants on submission of RCA reports on issues for team analysis.",
+      "Spearheaded the successful handover of the Daily Asset Performance Report framework to the Data Management team, completing the full transition within a 1-month timeline."
     ]
   },
   {
@@ -61,9 +62,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     type: "Internship",
     logo: "assets/irah.png",
     description: [
-      "Assisted in the designing and implementation of **auxiliary and FDAS systems** through **AutoCAD**.",
-      "Installed **wiring and electrical/electronic systems** under the supervision of electricians.",
-      "Coordinated with main office on the transfer of incomplete equipment to the site."
+      "Assisted in the design and physical installation of FDAS and auxiliary systems, ensuring accurate wiring compliant with safety standards.",
+      "Resolved site equipment shortages by coordinating with the main office to expedite logistics, effectively preventing project downtime.",
+      "Managed onsite administrative logistics of allowance distribution to the intern team assigned to the site."
     ]
   }
 ];
@@ -83,13 +84,13 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Electrical Installation & Maintenance NCII",
     issuer: "TESDA",
     year: "2025",
-    logo: "assets/tesda.jpg"
+    logo: "assets/tesda.png"
   },
   {
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/tesda.jpg"
+    logo: "assets/tesda.png"
   },
   {
     title: "Merit Scholar",
@@ -108,7 +109,7 @@ export const ACADEMIC_PROJECTS: Project[] = [
     title: "Project Thesis: Biofuel Production",
     subtitle: "Anaerobic Digestion of Chlorophyta Biomass Co-digested with Livestock Manure: Harnessing Biogas for Methane-Derived Electrochemical Energy Conversion in Cabuyao, Laguna",
     category: "Research",
-    description: "Small-scale exploratory study on modified biomass feedstock based on algae and cattle waste for methane gas production as alternative fuel source for biogas generators.",
+    description: "Small-scale exploratory study project on a modified biomass feedstock based on algae and cattle waste mixture for methane gas production as alternative fuel source for biogas generators.",
     technologies: ["Biomass Feedstock", "Renewable Energy", "Research Methodology"]
   },
   {
@@ -117,6 +118,13 @@ export const ACADEMIC_PROJECTS: Project[] = [
     category: "Software",
     description: "Developed a digital tracking system to tabulate daily sales and stock of a water refilling station, increasing daily productivity and efficiency.",
     technologies: ["Python", "Data Management", "Efficiency Optimization"]
+  },
+  {
+    id: 'xl-fault-calc',
+    title: "Excel-based Symmetrical Fault Calculator",
+    category: "Power Systems",
+    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {
     id: 'relay-table-game',
@@ -164,8 +172,8 @@ export const PERSONAL_PROJECTS: Project[] = [
     id: 'xl-fault-calc',
     title: "Excel-based Symmetrical Fault Calculator",
     category: "Power Systems",
-    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
-    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
+    description: "(Under development) Fault-type selectable and parameter configurable n-bus electrical fault calculator built using python and python libraries utilizing Z-bus method. Created to better understand electrical faults and cross-check answers. ",
+    technologies: ["Python", "Numpy", "Power System Analysis", "Z-bus Method"]
   }
 ];
 
@@ -186,6 +194,8 @@ export const SKILLS: Skill[] = [
   { name: "SQL", category: "Programming", details: "Working Knowledge" },
   { name: "C/C++", category: "Programming", details: "Basic Knowledge" },
   { name: "Arduino", category: "Core" },
-  { name: "Electrical Installation", category: "Core", details: "NCII Certified" },
-  { name: "PV System Installation", category: "Core", details: "TESDA Online Certified" }
+  { name: "Electrical Circuits", category: "Core" },
+  { name: "Electrical Machines", category: "Core" },
+  { name: "Electrical Design and Illumination", category: "Core" },
+  { name: "Power Plant Design", category: "Core" },
 ];

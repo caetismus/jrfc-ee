@@ -41,6 +41,13 @@ export interface CertificationItem {
   logo?: string; // Path to image file in public/assets
 }
 
+export interface ContactInfo {
+  email: string;
+  viberQrImage: string; // Path to QR image file in public/assets
+  linkedinUrl: string;
+  linkedinDisplay: string;
+}
+
 export enum SectionId {
   HERO = 'home',
   ABOUT = 'about',

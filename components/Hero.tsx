@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { SectionId } from '../types';
-import { ENGINEER_ROLE, ENGINEER_NAME } from '../constants';
+import { ENGINEER_ROLE, ENGINEER_NAME, HERO_DESCRIPTION } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -13,8 +14,7 @@ const Hero: React.FC = () => {
           {ENGINEER_ROLE}
         </p>
         <p className="mt-4 text-slate-500 max-w-2xl leading-relaxed text-justify">
-          Results-oriented graduate with a strong interest in energy and renewables. 
-          Aspiring Registered Electrical Engineer (REE) focused on quality, critical thinking, and innovation.
+          {HERO_DESCRIPTION}
         </p>
       </div>
     </section>

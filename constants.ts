@@ -1,8 +1,17 @@
-
-import { Project, Skill, EducationItem, ExperienceItem, CertificationItem } from './types';
+import { Project, Skill, EducationItem, ExperienceItem, CertificationItem, ContactInfo } from './types';
 
 export const ENGINEER_NAME = "James Cubito";
 export const ENGINEER_ROLE = "Graduate Electrical Engineer";
+export const HERO_DESCRIPTION = "Graduating Electrical Engineering student at Pamantasan ng Lungsod ng Maynila with a focus on power systems, controls, and renewable energy. Interested in gaining hands-on experience, developing technical expertise, and contributing to sustainable energy solutions. Open to opportunities for learning, collaboration, and professional growth.";
+
+// --- CONTACT INFORMATION ---
+// IMPORTANT: Upload 'viber_qr.png' to public/assets/
+export const CONTACT_INFO: ContactInfo = {
+  email: "jamescubito@gmail.com",
+  viberQrImage: "assets/viber_qr.png", 
+  linkedinUrl: "https://linkedin.com/in/jamescubito",
+  linkedinDisplay: "in/jamescubito"
+};
 
 // =============================================================================
 //  EDUCATION HISTORY
@@ -91,9 +100,9 @@ export const CERTIFICATIONS: CertificationItem[] = [
 ];
 
 // =============================================================================
-//  PROJECTS
+//  ACADEMIC PROJECTS
 // =============================================================================
-export const PROJECTS: Project[] = [
+export const ACADEMIC_PROJECTS: Project[] = [
   {
     id: 'thesis',
     title: "Project Thesis: Biofuel Production",
@@ -108,13 +117,6 @@ export const PROJECTS: Project[] = [
     category: "Software",
     description: "Developed a digital tracking system to tabulate daily sales and stock of a water refilling station, increasing daily productivity and efficiency.",
     technologies: ["Python", "Data Management", "Efficiency Optimization"]
-  },
-  {
-    id: 'xl-fault-calc',
-    title: "Excel-based Symmetrical Fault Calculator",
-    category: "Power Systems",
-    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
-    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   },
   {
     id: 'relay-table-game',
@@ -151,6 +153,19 @@ export const PROJECTS: Project[] = [
     category: "Research",
     description: "Conducted and analyzed a statistical correlational study of GWA and mental health of university senior high school STEM students in DLSU Manila.",
     technologies: ["Statistical Analysis", "Data Correlation", "Academic Research"]
+  }
+];
+
+// =============================================================================
+//  PERSONAL PROJECTS
+// =============================================================================
+export const PERSONAL_PROJECTS: Project[] = [
+  {
+    id: 'xl-fault-calc',
+    title: "Excel-based Symmetrical Fault Calculator",
+    category: "Power Systems",
+    description: "Developed a fault calculator for three-phase faults based on configurable number of buses and line parameters using Z-bus method.",
+    technologies: ["MS Excel", "Power System Analysis", "Z-bus Method"]
   }
 ];
 

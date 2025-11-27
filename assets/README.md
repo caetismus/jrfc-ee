@@ -1,12 +1,15 @@
+
 # Website Assets
 
-This folder is where you should upload your logo images.
+This folder is where you should upload your logo images and documents.
 
 Based on the current configuration in `constants.ts`, please add the following files here:
 
+**CV/Resume:**
+- `cv.pdf` (This is linked to the "Download CV" button in the header)
+
 **Education:**
 - `plm.png`
-- `dlsu.png`
 
 **Experience:**
 - `acen.png`

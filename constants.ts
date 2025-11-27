@@ -89,7 +89,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
-    logo: "assets/etesda.png"
+    logo: "assets/tesda.png"
   },
   {
     title: "Merit Scholar",

@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center relative">
         
         {/* Empty div to balance flex layout so nav remains centered */}
-        <div className="hidden md:block w-[160px]"></div>
+        <div className="hidden md:block w-[100px]"></div>
 
         {/* Desktop Nav - Centered */}
         <div className="hidden md:flex space-x-12">
@@ -54,15 +54,15 @@ const Header: React.FC = () => {
         </div>
 
         {/* Desktop Download Button (Right Side) */}
-        <div className="hidden md:flex justify-end w-[160px]">
+        <div className="hidden md:flex justify-end w-[100px]">
           <a 
             href="assets/resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-slate-900 hover:bg-primary-600 text-white text-xs font-bold py-2 px-4 rounded-full transition-colors"
+            className="flex items-center gap-1.5 bg-slate-900 hover:bg-primary-600 text-white text-[11px] font-medium py-1.5 px-3 rounded-full transition-all shadow-sm hover:shadow-md"
           >
-            <Download size={14} />
-            Download Resume
+            <Download size={13} />
+            Resume
           </a>
         </div>
 
@@ -73,9 +73,9 @@ const Header: React.FC = () => {
                 href="assets/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-slate-900 text-white text-xs font-bold py-2 px-4 rounded-full"
+                className="flex items-center gap-1.5 bg-slate-900 text-white text-[11px] font-medium py-1.5 px-3 rounded-full shadow-sm"
               >
-                <Download size={14} />
+                <Download size={13} />
                 Resume
               </a>
 

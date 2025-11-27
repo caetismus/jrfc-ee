@@ -79,28 +79,28 @@ export const CERTIFICATIONS: CertificationItem[] = [
     issuer: "MF Treinamentos",
     year: "2025",
     logo: "assets/mf_treinamentos.png",
-    link: "certifications/lean_six_sigma.pdf"
+    link: "https://www.linkedin.com/in/jamescubito/overlay/Certifications/18319228/treasury/?profileId=ACoAAB-vvhABwkL8ZdOhGpXwW1ysdkBLFnUlenc"
   },
   {
     title: "Electrical Installation & Maintenance NCII",
     issuer: "TESDA",
     year: "2025",
     logo: "assets/tesda.jpg",
-    link: "certifications/eim_ncii.pdf"
+    link: "https://www.tesda.gov.ph/Rwac/Rwac2017"
   },
   {
     title: "Photovoltaic System Installation NCII",
     issuer: "eTESDA",
     year: "2025",
     logo: "assets/tesda.jpg",
-    link: "certifications/pv_system_ncii.pdf"
+    link: "https://drive.google.com/drive/folders/17bun6aQXyKUEdBzQPfa1MNRRDbFNbrkr?usp=sharing"
   },
   {
     title: "Merit Scholar",
     issuer: "DOST-Science Education Institute",
     year: "2020",
     logo: "assets/dost.png",
-  //  link: "certifications/dost_scholar.pdf"
+    link: "https://www.thesummitexpress.com/2020/02/a-g-passers-october-2019-dost-scholarship-exam-result-ay-2020-2021.html"
   }
 ];
 

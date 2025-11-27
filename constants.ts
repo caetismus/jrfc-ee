@@ -46,12 +46,12 @@ export const EXPERIENCE: ExperienceItem[] = [
     type: "Internship",
     logo: "assets/acen.png",
     description: [
-      "Assisted the *Plant Performance Team* in consolidating operational data from multiple plant sites.",
-      "Streamlined the plant downtime data collection and analysis using *advanced MS Excel* automation methods, reducing manual overhead and reducing entry errors.",
-      "Prepared and presented daily performance reports for management using *Tableau* and *Excel Power Query*.",
-      "Utilized *Snowflake SQL* for data extraction and analysis to support reporting accuracy.",
-      "Coordinated with several solar and wind plants on submission of *RCA reports* on issues for team analysis.",
-      "Spearheaded the successful handover of the *Daily Asset Performance Report* framework to the Data Management team, completing the full transition within a 1-month timeline."
+      "Assisted the **Plant Performance Team** in consolidating operational data from multiple plant sites.",
+      "Streamlined the plant downtime data collection and analysis using **advanced MS Excel** automation methods, reducing manual overhead and reducing entry errors.",
+      "Prepared and presented daily performance reports for management using **Tableau** and **Excel Power Query**.",
+      "Utilized **Snowflake SQL** for data extraction and analysis to support reporting accuracy.",
+      "Coordinated with several solar and wind plants on submission of **RCA reports** on issues for team analysis.",
+      "Spearheaded the successful handover of the **Daily Asset Performance Report** framework to the Data Management team, completing the full transition within a 1-month timeline."
     ]
   },
   {

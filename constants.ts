@@ -62,7 +62,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     type: "Internship",
     logo: "assets/irah.png",
     description: [
-      "Assisted in the design and physical installation of FDAS and auxiliary systems, ensuring accurate wiring compliant with safety standards.",
+      "Assisted in the design and physical installation of **FDAS and auxiliary systems**, ensuring accurate wiring compliant with safety standards.",
       "Resolved site equipment shortages by coordinating with the main office to expedite logistics, effectively preventing project downtime.",
       "Managed onsite administrative logistics of allowance distribution to the intern team assigned to the site."
     ]

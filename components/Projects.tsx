@@ -47,6 +47,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Personal Projects Section */}
+        {/*
         {PERSONAL_PROJECTS.length > 0 && (
           <>
             <h3 className="text-3xl font-bold text-slate-900 mb-8">Personal Projects</h3>
@@ -57,6 +58,7 @@ const Projects: React.FC = () => {
             </div>
           </>
         )}
+        */}
       </div>
     </section>
   );

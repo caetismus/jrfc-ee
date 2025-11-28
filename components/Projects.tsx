@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionId, Project } from '../types';
-import { ACADEMIC_PROJECTS, PERSONAL_PROJECTS } from '../constants';
+import { ACADEMIC_PROJECTS, /*PERSONAL_PROJECTS*/ } from '../constants';
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   <div className="group border-l-4 border-slate-200 hover:border-primary-600 pl-6 py-2 transition-all duration-300">

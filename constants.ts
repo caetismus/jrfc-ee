@@ -157,7 +157,7 @@ export const ACADEMIC_PROJECTS: Project[] = [
 // =============================================================================
 //  PERSONAL PROJECTS
 // =============================================================================
-export const PERSONAL_PROJECTS: Project[] = [
+//export const PERSONAL_PROJECTS: Project[] = [
   {
     id: 'faultcalcpy',
     title: "Python-based Electrical Fault Calculator",

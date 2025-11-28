@@ -157,15 +157,15 @@ export const ACADEMIC_PROJECTS: Project[] = [
 // =============================================================================
 //  PERSONAL PROJECTS
 // =============================================================================
-export const PERSONAL_PROJECTS: Project[] = [
-  {
-    id: 'faultcalcpy',
-    title: "Python-based Electrical Fault Calculator",
-    category: "Power Systems",
-    description: "(Under development) Fault-type selectable and parameter configurable n-bus electrical fault calculator built using python and python libraries utilizing Z-bus method. Created to better understand electrical faults and cross-check answers. ",
-    technologies: ["Python", "Numpy", "Power System Analysis", "Z-bus Method"]
-  }
-];
+//export const PERSONAL_PROJECTS: Project[] = [
+//  {
+//    id: 'faultcalcpy',
+//    title: "Python-based Electrical Fault Calculator",
+//    category: "Power Systems",
+//    description: "(Under development) Fault-type selectable and parameter configurable n-bus electrical fault calculator built using python and python libraries utilizing Z-bus method. Created to better understand electrical faults and cross-check answers. ",
+//    technologies: ["Python", "Numpy", "Power System Analysis", "Z-bus Method"]
+//  }
+//];
 
 // =============================================================================
 //  SKILLS

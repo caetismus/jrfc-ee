@@ -137,13 +137,13 @@ export const ACADEMIC_PROJECTS: Project[] = [
     description: "Constructed an adjustable DC power supply from scratch with various electronic components; designed a self-etched rectifier as a component.",
     technologies: ["PCB Etching", "Power Electronics", "Component Assembly"]
   },
-  {
+  /*{
     id: 'sumobot',
     title: "Arduino-based Sumobot",
     category: "Robotics",
     description: "Developed a small sumobot using arduino microprocessor utilizing various sensors for use in college organized sumobot competition, ranked 3rd for EE department.",
     technologies: ["Arduino", "Sensors", "C++", "Robotics"]
-  },
+  },*/
   {
     id: 'shs-capstone',
     title: "Research Capstone: Statistical Correlational Study",

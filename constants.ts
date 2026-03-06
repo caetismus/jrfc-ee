@@ -29,6 +29,17 @@ export const EDUCATION: EducationItem[] = [
       "Member: PLM Junior Institute of Electrical Engineers",
       "Scholar: DOST-SEI Merit 2020"
     ]
+  },
+   {
+    school: "De La Salle University - Manila",
+    degree: "Senior High School, STEM",
+    location: "Malate, Manila",
+    year: "2018 - 2020",
+    logo: "assets/dlsu.png",
+    highlights: [
+      "Member: DLSU SHS Robotics and Engineering Club",
+      "Member: DLSU SHS Student Ambassadors",
+    ]
   }
 ];
 

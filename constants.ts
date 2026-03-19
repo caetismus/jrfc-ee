@@ -188,6 +188,7 @@ export const SKILLS: Skill[] = [
   { name: "AutoCAD", category: "Software" },
   { name: "MATLAB", category: "Programming", details: "Working Knowledge" },
   { name: "PowerWorld Simulator", category: "Software" },
+  { name: "ETAP", category: "Software" },
   { name: "DIALux evo", category: "Software" },
   { name: "PowerBI", category: "Software" },
   { name: "Snowflake SQL", category: "Software" },

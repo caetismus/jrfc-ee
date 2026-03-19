@@ -2,7 +2,7 @@ import { Project, Skill, EducationItem, ExperienceItem, CertificationItem, Conta
 
 export const ENGINEER_NAME = "James Cubito";
 export const ENGINEER_ROLE = "Graduate Electrical Engineer";
-export const HERO_DESCRIPTION = "Graduating Electrical Engineering student at Pamantasan ng Lungsod ng Maynila with a focus on power systems, controls, and renewable energy. Interested in gaining hands-on experience, developing technical expertise, and contributing to sustainable energy solutions. Open to opportunities for learning, collaboration, and professional growth.";
+export const HERO_DESCRIPTION = "Graduate Electrical Engineer from Pamantasan ng Lungsod ng Maynila with a focus on power systems, controls, energy, and electrical infrastructure. Interested in gaining hands-on experience, developing technical expertise, and contributing to sustainable energy solutions. Open to opportunities for learning, collaboration, and professional growth.";
 
 // --- CONTACT INFORMATION ---
 // IMPORTANT: Upload 'viber_qr.png' to public/assets/
